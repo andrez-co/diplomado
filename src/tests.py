@@ -1,7 +1,4 @@
-# pyrefly: ignore [missing-import]
-import pytest
 from calculadora import sumar, Calculadora
-
 
 # Prueba Unitaria
 def test_sumar():
