@@ -1,2 +1,15 @@
-def test_ejemplo():
-    assert True
+# pyrefly: ignore [missing-import]
+import pytest
+from calculadora import sumar, Calculadora
+
+
+# Prueba Unitaria
+def test_sumar():
+    assert sumar(2, 3) == 5
+
+
+# Prueba de Integración
+def test_integracion_calculadora():
+    calc = Calculadora()
+    resultado = calc.operar(10, 5)
+    assert resultado == 15
